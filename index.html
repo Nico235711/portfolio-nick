@@ -1,318 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metadatos -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Nicolás Lopez Vidueiros" />
+    <meta
+      name="description"
+      content="Portafolio de desarrollo web de Nicolás Lopez Vidueiros"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Titulo -->
     <title>Nicolás Lopez Vidueiros</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/icono.png" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-      <header>
-        <div class="logo">
-          <a href="#">Nicolás</a>
-        </div>
-        <nav id="nav" class="nav">
-          <a href="#">Sobre mi</a>
-          <a href="#">Habilidades</a>
-          <a href="#">Proyectos</a>
-        </nav>
-        <div class="nav-responsive">
-          <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-        </div>
-      </header>
-    </div>
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-      <div class="contenido-banner">
-        <div class="contenedor-img">
-          <img src="img/hero.png" alt="" />
-        </div>
-        <h1>Nicolás Lopez Vidueiros</h1>
-        <div class="redes">
-          <a href="#">
-            <i class="fa-brands fa-github"></i>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/icono.png"
+              width="50"
+              alt="Logo de la página web"
+            />
           </a>
-          <a href="#">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi"
+                >Sobre mí</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div
+        class="hero-principal d-flex flex-column justify-content-center align-items-center"
+      >
+        <img
+          class="hero-imagen-desarrollador rounded-circle"
+          src="img/icono.pngimagenes-desarrolladores/desarrollador-ejemplo.svg"
+          alt="Foto de Jane Doe"
+        />
+        <h1>Hola, soy Jane Doe</h1>
+        <h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>
+      </div>
+      <div class="hero-inferior">
+        <img
+          class="hero-inferior-imagen img-fluid"
+          src="img/icono.pnghero-inferior.svg"
+          alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React."
+        />
+      </div>
     </section>
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-      <div class="contenido-seccion">
-        <h2>Sobre Mí</h2>
-        <p>
-          <span>Hola, soy Nicolás Lopez Vidueiros</span> apasionado por el
-          desarrollo web. Actualmente, me especializo en el uso de herramientas
-          como React, TypeScript y Node.js, aplicando mis conocimientos en
-          proyectos prácticos. Me gusta crear soluciones creativas y
-          funcionales, especialmente en aplicaciones web interactivas.
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoce a Jane Doe</h2>
+        <p class="seccion-texto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet,
+          odio eget fringilla scelerisque, sem purus fringilla mauris, nec
+          ultricies nisl nisl sit amet dolor. Donec et venenatis nunc, vel
+          hendrerit ex. Vestibulum sapien ipsum, rutrum eget est et, ultricies
+          sagittis urna. In non volutpat est. Vestibulum diam sapien, ultrices
+          et euismod at, ultrices ut odio. Nullam in massa et elit ultrices
+          suscipit. Proin lacinia leo ac posuere placerat.
         </p>
+      </div>
     </section>
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-      <div class="contenido-seccion">
-        <h2>Skills</h2>
-        <div class="fila">
-          <!-- Technical Skill -->
-          <div class="col">
-            <h3>Technical Skills</h3>
-            <div class="skill">
-              <span>Javascript</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>75%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>HTML & CSS</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>89%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Photoshop</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>95%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Wordpress</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>81%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Drupa</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>55%</span>
-                </div>
-              </div>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-6">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              laoreet, odio eget fringilla scelerisque, sem purus fringilla
+              mauris, nec ultricies nisl nisl sit amet dolor.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">HTML</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">React</span>
             </div>
           </div>
-          <!-- Professional Skills -->
-          <div class="col">
-            <h3>Professional Skills</h3>
-            <div class="skill">
-              <span>Comunicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Creatividad</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>99%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Dedicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Proyect Management</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>94%</span>
-                </div>
-              </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-6">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Estudiante</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              laoreet, odio eget fringilla scelerisque, sem purus fringilla
+              mauris, nec ultricies nisl nisl sit amet dolor.
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">freeCodeCamp</span>
+              <span class="badge text-bg-primary">Desarrollo Web</span>
+              <span class="badge text-bg-primary">Python</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-      <div class="contenido-seccion">
-        <h2>Educación</h2>
-        <div class="fila">
-          <div class="col izquierda">
-            <div class="item izq">
-              <h4>Arte y Multimedia</h4>
-              <span class="casa">Universidad de Oxford</span>
-              <span class="fecha">2005 - 2008</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-                cumque repellat, tempora recusandae aliquam nemo esse natus
-                impedit, nostrum temporibus veritatis eaque soluta aperiam id
-                repudiandae fugiat deserunt! Explicabo, veritatis?
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>Arte y Multimedia</h4>
-              <span class="casa">Universidad de Oxford</span>
-              <span class="fecha">2005 - 2008</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-                cumque repellat, tempora recusandae aliquam nemo esse natus
-                impedit, nostrum temporibus veritatis eaque soluta aperiam id
-                repudiandae fugiat deserunt! Explicabo, veritatis?
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
-              </div>
-            </div>
-            <div class="item izq">
-              <h4>Arte y Multimedia</h4>
-              <span class="casa">Universidad de Oxford</span>
-              <span class="fecha">2005 - 2008</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-                cumque repellat, tempora recusandae aliquam nemo esse natus
-                impedit, nostrum temporibus veritatis eaque soluta aperiam id
-                repudiandae fugiat deserunt! Explicabo, veritatis?
-              </p>
-              <div class="conectori">
-                <div class="circuloi"></div>
+    <!-- Proyectos -->
+    <section
+      id="proyectos"
+      class="proyectos-recientes seccion-clara d-flex flex-column"
+    >
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">
+        Estos son algunos proyectos que he creado recientemente...
+      </h3>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/icono.pngproyecto1.png" alt="Proyecto 1" />
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.freecodecamp.org/espanol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col derecha">
-            <h3>Experiencia de trabajo</h3>
-            <div class="item der">
-              <h4>Front Developer</h4>
-              <span class="casa">Nombre de Compañía</span>
-              <span class="fecha">2005 - 2008</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-                cumque repellat, tempora recusandae aliquam nemo esse natus
-                impedit, nostrum temporibus veritatis eaque soluta aperiam id
-                repudiandae fugiat deserunt! Explicabo, veritatis?
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/icono.pngproyecto2.png" alt="Proyecto 1" />
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.freecodecamp.org/espanol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="item der">
-              <h4>Front Developer</h4>
-              <span class="casa">Nombre de Compañía</span>
-              <span class="fecha">2005 - 2008</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-                cumque repellat, tempora recusandae aliquam nemo esse natus
-                impedit, nostrum temporibus veritatis eaque soluta aperiam id
-                repudiandae fugiat deserunt! Explicabo, veritatis?
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/icono.pngproyecto3.png" alt="Proyecto 1" />
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.freecodecamp.org/espanol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="item der">
-              <h4>Front Developer</h4>
-              <span class="casa">Nombre de Compañía</span>
-              <span class="fecha">2005 - 2008</span>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis,
-                cumque repellat, tempora recusandae aliquam nemo esse natus
-                impedit, nostrum temporibus veritatis eaque soluta aperiam id
-                repudiandae fugiat deserunt! Explicabo, veritatis?
-              </p>
-              <div class="conectord">
-                <div class="circulod"></div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/icono.pngproyecto4.png" alt="Proyecto 1" />
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.freecodecamp.org/espanol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/icono.pngproyecto5.png" alt="Proyecto 1" />
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.freecodecamp.org/espanol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="img/icono.pngproyecto6.png" alt="Proyecto 1" />
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a
+                    href="https://github.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a
+                    href="https://www.freecodecamp.org/espanol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-      <div class="contenido-seccion">
-        <h2>PORTFOLIO</h2>
-        <div class="galeria">
-          <div class="proyecto">
-            <img src="img/p1.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p2.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p3.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p4.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p5.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p6.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-      <a href="#inicio" class="arriba">
-        <i class="fa-solid fa-angles-up"></i>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
       </a>
-      <div class="redes">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-skype"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-solid fa-rss"></i></a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div
+          class="container text-center rectangulo d-flex justify-content-evenly"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">¡Hablemos!</div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para iniciar tu proyecto de desarrollo web y haré que
+              tu visión se vuelva realidad.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:janedoe@micorreo.com">
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <!-- Pie de pagina (footer) -->
+    <footer
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        class="footer-logo"
+        src="img/icono-blanco.svg"
+        alt="Logo del portafolio"
+      />
+      <p class="footer-texto text-center">
+        Aprendo y creo todos los días.<br />Creemos un proyecto juntos.
+      </p>
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://github.com/Nico235711"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a
+          href="mailto:nicolas.lopez.vidueiros@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Nicolás Lopez Vidueiros</div>
     </footer>
 
     <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
