@@ -2,9 +2,9 @@
 export const AboutMe = () => {
 
   return (
-    <div className="flex flex-col items-center justify-center mt-5 space-y-5">
+    <div className="bg-white p-5 shadow rounded-md">
       <img
-        className="w-44 shadow rounded-full"
+        className="w-44 shadow rounded-full mx-auto"
         src="/developer.jpg"
         alt="Nicolás Lopez Vidueiros" />
       <div className="flex flex-col items-center justify-center space-y-4">
