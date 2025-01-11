@@ -17,7 +17,7 @@ const links = [
 export default function Header() {
 
   return (
-    <header className="bg-slate-900 p-10">
+    <header className="bg-slate-900 p-10 sticky top-0 z-[9999]">
       <div className="max-w-7xl mx-auto text-white flex flex-col lg:flex-row lg:justify-between items-center gap-5">
         <h1 className="font-black text-5xl text-center">
           <span className="text-[#DBFF5E]">Nicolás</span> Lopez Vidueiros
