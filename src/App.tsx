@@ -17,7 +17,6 @@ export default function App() {
       <main className="my-5" id="projects">
         <Projects />
       </main>
-      <ContactMe />
       <Footer />
     </>
   )
