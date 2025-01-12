@@ -4,7 +4,12 @@ export const ContactMe = () => {
   return (
     <section>
       <h2 className="text-5xl font-black text-center">Contactame</h2>
-      <form className="max-w-5xl mx-auto bg-white p-10 my-5 rounded-md" id="contact">
+      <form
+        className="max-w-5xl mx-auto bg-white p-10 my-5 rounded-md"
+        id="contact"
+        action="https://formspree.io/f/xqakzjpr"
+        method="POST"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <input
             type="text"
