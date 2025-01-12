@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Header />
       <section className="bg-hero bg-cover" id="about">
-        <div className="flex flex-col items-center justify-center p-10">
+        <div className="flex flex-col items-center justify-center p-5">
           <AboutMe />
         </div>
       </section>
